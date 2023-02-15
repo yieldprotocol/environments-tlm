@@ -1,21 +1,22 @@
-// import { Timelock__factory, Giver__factory, YieldStEthLever__factory } from '../../../../../typechain'
-// import { getOwnerOrImpersonate, propose } from '../../../../../shared/helpers'
-// import { orchestrateLever } from '../../../../fragments/utils/orchestrateLever'
-// import { TIMELOCK, GIVER, YIELD_STETH_LEVER } from '../../../../../shared/constants'
+import { DssTlm__factory } from '../../../typechain'
+import { getOwnerOrImpersonate } from '../../../shared/helpers'
+import { TLM, PAUSE_PROXY } from '../../../shared/constants'
 // 
-// const { developer } = require(process.env.CONF as string)
-// const { protocol, governance } = require(process.env.CONF as string)
-// 
-// /**
-//  * @dev This script orchestrates the YieldStEthLever, Giver and sets flashfeefactor on joins and fyTokens
-//  */
-// ;(async () => {
-//   let ownerAcc = await getOwnerOrImpersonate(developer as string)
-//   const timelock = Timelock__factory.connect(governance.getOrThrow(TIMELOCK), ownerAcc)
-//   const giver = Giver__factory.connect(protocol().getOrThrow(GIVER), ownerAcc)
-//   const yieldStEthLever = YieldStEthLever__factory.connect(protocol().getOrThrow(YIELD_STETH_LEVER), ownerAcc)
-// 
-//   let proposal: Array<{ target: string; data: string }> = await orchestrateLever(yieldStEthLever.address, giver)
-// 
-//   await propose(timelock, proposal, developer)
-// })()
+const { developer, deployers, changelog } = require(process.env.CONF as string)
+
+/**
+ * @dev This script orchestrates the TLM
+ */
+;(async () => {
+  let ownerAcc = await getOwnerOrImpersonate(developer)
+  const tlm = DssTlm__factory.connect(changelog.getOrThrow(TLM), ownerAcc)
+  const dsPauseProxyAddress = changelog.getOrThrow(PAUSE_PROXY)
+
+  //   Give authority to DSPauseProxy and remove it from the deployer
+  let deployerAcc = await getOwnerOrImpersonate(deployers.getOrThrow(tlm.address))
+  await tlm.connect(deployerAcc).rely(dsPauseProxyAddress);
+  console.log(`TLM: ${tlm.address} is now authorized to be called by DSPauseProxy (${dsPauseProxyAddress})`)
+
+  await tlm.connect(deployerAcc).deny(deployers.getOrThrow(tlm.address));
+  console.log(`TLM: ${tlm.address} is no longer authorized to be called by deployer (${deployers.getOrThrow(tlm.address)})`)
+})()

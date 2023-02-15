@@ -19,11 +19,15 @@ export function stringToBytes6(x: string): string {
 export const TLM = 'MCD_TLM'
 export const DAI = 'MCD_DAI'
 export const DAI_JOIN = 'MCD_JOIN_DAI'
+export const VAT = 'MCD_VAT'
 export const VOW = 'MCD_VOW'
+export const PAUSE_PROXY = 'MCD_PAUSE_PROXY'
 
 export const DISPLAY_NAMES = new Map([
-  [TLM, 'MCD_TLM'],
+  [TLM, 'TLM'],
   [DAI, 'DAI'],
   [DAI_JOIN, 'DAI_JOIN'],
-  [VOW, 'MCD_VOW'],
+  [VOW, 'VOW'],
+  [VAT, 'VAT'],
+  [PAUSE_PROXY, 'PAUSE_PROXY'],
 ])
