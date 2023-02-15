@@ -1923,11 +1923,6 @@
     "@types/sinon-chai" "^3.2.3"
     "@types/web3" "1.0.19"
 
-"@openzeppelin/contracts@^4.1.0":
-  version "4.7.3"
-  resolved "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-4.7.3.tgz"
-  integrity sha512-dGRS0agJzu8ybo44pCIf3xBaPQN/65AIXNgK8+4gzKd5kbvlqyxryUYVLJv7fK98Seyd2hDZzVEHSWAh0Bt1Yw==
-
 "@resolver-engine/core@^0.3.3":
   version "0.3.3"
   resolved "https://registry.npmjs.org/@resolver-engine/core/-/core-0.3.3.tgz"
@@ -2633,40 +2628,6 @@
   version "1.1.0"
   resolved "https://registry.npmjs.org/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz"
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
-
-"@yield-protocol/strategy-v2@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@yield-protocol/strategy-v2/-/strategy-v2-2.0.0.tgz#fb46e950f4307a9649e4ab7ad63311a6502d06da"
-  integrity sha512-3kmIxsNhY/gVgnKo+33jcW2g4V9ij5dO7EGP1oY++fZYg3jNUiFpao8hoBpdSG0vOH4VcPfktwnA+Pr7MxNUZQ==
-
-"@yield-protocol/utils-v2@2.6.9-rc.1":
-  version "2.6.9-rc.1"
-  resolved "https://registry.yarnpkg.com/@yield-protocol/utils-v2/-/utils-v2-2.6.9-rc.1.tgz#5f83ea063981fcb4870d6354461080fea4249151"
-  integrity sha512-5DnMJOETEtZcGEVOjRXMD+ZSgc6andk/rCpqDVsimi5F76x/4+clZVfvV2kPTSe1+4liEhhXuq0YDrQTv8dMXg==
-  dependencies:
-    ethereumjs-util "^7.0.8"
-
-"@yield-protocol/utils-v2@^2.4.2":
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/@yield-protocol/utils-v2/-/utils-v2-2.6.8.tgz#a9cd0b191842a320a3e159567ee6dc4e3b3e21b8"
-  integrity sha512-O2mhFV7zKJjGVOs68fobcnv6E+k1rK6kqSdFVS78WzI6VuACM9xF3s6VH39QbEPp2on3Vkm0PBG33AfhT+T1yA==
-  dependencies:
-    ethereumjs-util "^7.0.8"
-
-"@yield-protocol/vault-interfaces@^2.3.0-rc4":
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/@yield-protocol/vault-interfaces/-/vault-interfaces-2.5.0.tgz"
-  integrity sha512-aoIn1tTADJaIiNPHoy7EswvFZZXZFUhJfYPEJdakLvfGruhfoPXm/Wl2aq/A1qmuniov5RDuvpWENZsBNaEgRw==
-
-"@yield-protocol/vault-v2@0.18.10-rc.1":
-  version "0.18.10-rc.1"
-  resolved "https://registry.yarnpkg.com/@yield-protocol/vault-v2/-/vault-v2-0.18.10-rc.1.tgz#0dcd524ebbc2b132a42bf818cfd1f65ac8b1d0c7"
-  integrity sha512-pfRwpopK/w9ezsMFgmUV8KX5LPxz9BnIXHA++13wUu35lquEqRxWyOwjbycwTbabU8ynxnEZb5OSOOK0u/kLhw==
-
-"@yield-protocol/yieldspace-tv@0.1.9-rc.3":
-  version "0.1.9-rc.3"
-  resolved "https://registry.yarnpkg.com/@yield-protocol/yieldspace-tv/-/yieldspace-tv-0.1.9-rc.3.tgz#6c2ef893c8830a588b73d86e4e27d9df57ea8b90"
-  integrity sha512-Es9rf9oegKkHX0C/oIHv32mrWmyaTBbE7RAm5OL5HfNGmZqBY2lfEKbSod/XCdHmzee4Hacul5pgyQ53XUIvhA==
 
 abab@^2.0.0:
   version "2.0.6"
@@ -6418,7 +6379,7 @@ ethereumjs-util@^5.0.0, ethereumjs-util@^5.0.1, ethereumjs-util@^5.1.1, ethereum
     rlp "^2.0.0"
     safe-buffer "^5.1.1"
 
-ethereumjs-util@^7.0.10, ethereumjs-util@^7.0.2, ethereumjs-util@^7.0.8, ethereumjs-util@^7.1.0, ethereumjs-util@^7.1.2, ethereumjs-util@^7.1.5:
+ethereumjs-util@^7.0.10, ethereumjs-util@^7.0.2, ethereumjs-util@^7.1.0, ethereumjs-util@^7.1.2, ethereumjs-util@^7.1.5:
   version "7.1.5"
   resolved "https://registry.npmjs.org/ethereumjs-util/-/ethereumjs-util-7.1.5.tgz"
   integrity sha512-SDl5kKrQAudFBUe5OJM9Ac6WmMyYmXX/6sTmLZ3ffG2eY6ZIGBes3pEDxNN6V72WyOw4CPD5RomKdsa8DAAwLg==
@@ -8049,11 +8010,6 @@ humanize-duration@^3.15.3:
   version "3.27.2"
   resolved "https://registry.npmjs.org/humanize-duration/-/humanize-duration-3.27.2.tgz"
   integrity sha512-A15OmA3FLFRnehvF4ZMocsxTZYvHq4ze7L+AgR1DeHw0xC9vMd4euInY83uqGU9/XXKNnVIEeKc1R8G8nKqtzg==
-
-husky@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.npmjs.org/husky/-/husky-8.0.1.tgz"
-  integrity sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"
@@ -14146,14 +14102,6 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^2.0.1"
-
-uniswapv3-oracle@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/uniswapv3-oracle/-/uniswapv3-oracle-1.0.1.tgz"
-  integrity sha512-B2GpmD7HnI+XW/sCNu6nYZ206cdB8g6e7uYjdrJ41XiVxGEX2Cxdzt/wAiSYDG5euDFFBJSdw7p5wzIcTHij3w==
-  dependencies:
-    "@yield-protocol/utils-v2" "^2.4.2"
-    "@yield-protocol/vault-interfaces" "^2.3.0-rc4"
 
 universalify@^0.1.0:
   version "0.1.2"

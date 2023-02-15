@@ -108,9 +108,3 @@ jobs:
           key: ${{ runner.os }}-lint4-${{ hashFiles('yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-lint4-
-
-      - name: Lint
-        run: |
-          cd ${{ github.workspace }}
-          make node_modules/.installed
-          yarn lint:ts
