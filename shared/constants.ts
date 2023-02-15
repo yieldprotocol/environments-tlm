@@ -22,6 +22,9 @@ export const DAI_JOIN = 'MCD_JOIN_DAI'
 export const VAT = 'MCD_VAT'
 export const VOW = 'MCD_VOW'
 export const PAUSE_PROXY = 'MCD_PAUSE_PROXY'
+export const ILK_A = 'ILK_A'
+export const ILK_A_PIP = 'ILK_PIP'
+export const ILK_A_JOIN = 'ILK_JOIN'
 
 export const DISPLAY_NAMES = new Map([
   [TLM, 'TLM'],
@@ -30,4 +33,7 @@ export const DISPLAY_NAMES = new Map([
   [VOW, 'VOW'],
   [VAT, 'VAT'],
   [PAUSE_PROXY, 'PAUSE_PROXY'],
+  [ILK_A, 'ILK_A'],
+  [ILK_A_PIP, 'ILK_A_PIP'],
+  [ILK_A_JOIN, 'ILK_A_JOIN'],
 ])

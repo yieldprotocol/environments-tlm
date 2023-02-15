@@ -2,7 +2,8 @@ import { readAddressMappingIfExists } from '../../shared/helpers'
 
 import { DAI } from '../../shared/constants'
 
-export const changelog: Map<string, string> = readAddressMappingIfExists('changelog.json')
+export const makerdao: Map<string, string> = readAddressMappingIfExists('makerdao.json')
+export const dssTlm: Map<string, string> = readAddressMappingIfExists('dssTlm.json')
 export const deployers: Map<string, string> = readAddressMappingIfExists('deployers.json')
 
 export const developer = '0xC7aE076086623ecEA2450e364C838916a043F9a8'
