@@ -5,7 +5,6 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { BigNumber, ContractTransaction, BaseContract } from 'ethers'
 import { BaseProvider } from '@ethersproject/providers'
-import { Timelock } from '../typechain'
 import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers'
 import { DISPLAY_NAMES } from './constants'
 

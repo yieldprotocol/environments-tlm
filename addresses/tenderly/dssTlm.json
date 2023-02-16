@@ -1,0 +1,21 @@
+{
+  "dataType": "Map",
+  "value": [
+    [
+      "ILK_A",
+      "0x9ca4D6fbE0Ba91d553e74805d2E2545b04AbEfEA"
+    ],
+    [
+      "MCD_TLM",
+      "0xDb2294E6CcA794c260DB18AD35571cb287665667"
+    ],
+    [
+      "ILK_A_PIP",
+      "0xb9D60c0b378A49Fe47942F51AD732D64CeDeE637"
+    ],
+    [
+      "ILK_A_JOIN",
+      "0x521f455A0C8f726E0Ae088d2d497188Bd7664f65"
+    ]
+  ]
+}

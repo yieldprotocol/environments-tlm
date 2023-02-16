@@ -2,6 +2,7 @@ import { readAddressMappingIfExists } from '../../shared/helpers'
 
 import { DAI } from '../../shared/constants'
 
+export const yieldprotocol: Map<string, string> = readAddressMappingIfExists('yieldprotocol.json')
 export const makerdao: Map<string, string> = readAddressMappingIfExists('makerdao.json')
 export const dssTlm: Map<string, string> = readAddressMappingIfExists('dssTlm.json')
 export const deployers: Map<string, string> = readAddressMappingIfExists('deployers.json')

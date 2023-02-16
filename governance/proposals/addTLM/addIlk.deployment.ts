@@ -1,4 +1,4 @@
-import { VAT, ILK_A, ILK_A_PIP, ILK_A_JOIN } from '../../../shared/constants'
+import { VAT, ILK_A, ILK_A_B32, ILK_A_PIP, ILK_A_JOIN } from '../../../shared/constants'
 import * as base_config from '../base.mainnet.config'
 import { ContractDeployment } from '../confTypes'
 
@@ -11,18 +11,18 @@ export const dssTlm: Map<string, string> = base_config.dssTlm
 // ----- deployment parameters -----
 export const contractDeployments: ContractDeployment[] = [
   {
-    addressFile: 'changelog.json',
+    addressFile: 'dssTlm.json',
     name: ILK_A_PIP,
     contract: 'DSValue',
     args: [],
   },
   {
-    addressFile: 'changelog.json',
+    addressFile: 'dssTlm.json',
     name: ILK_A_JOIN,
     contract: 'AuthGemJoin',
     args: [
       () => makerdao.getOrThrow(VAT)!,
-      () => ILK_A,
+      () => ILK_A_B32,
       () => dssTlm.getOrThrow(ILK_A)!,
     ],
   },

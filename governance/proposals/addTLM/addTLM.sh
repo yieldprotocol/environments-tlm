@@ -11,5 +11,4 @@ $RUN $HERE/addTLM.ts
 
 export CONF=$PWD/$HERE/addIlk.deployment.ts
 $RUN $HERE/../../../shared/deploy.ts
-
-# $RUN $HERE/../../../shared/approve.ts
+$RUN $HERE/addIlk.ts

@@ -20,11 +20,14 @@ export const TLM = 'MCD_TLM'
 export const DAI = 'MCD_DAI'
 export const DAI_JOIN = 'MCD_JOIN_DAI'
 export const VAT = 'MCD_VAT'
+export const SPOT = 'MCD_SPOT'
 export const VOW = 'MCD_VOW'
 export const PAUSE_PROXY = 'MCD_PAUSE_PROXY'
 export const ILK_A = 'ILK_A'
-export const ILK_A_PIP = 'ILK_PIP'
-export const ILK_A_JOIN = 'ILK_JOIN'
+export const ILK_A_B32 = ethers.utils.formatBytes32String(ILK_A)
+export const ILK_A_PIP = 'ILK_A_PIP'
+export const ILK_A_JOIN = 'ILK_A_JOIN'
+export const LADLE = 'LADLE'
 
 export const DISPLAY_NAMES = new Map([
   [TLM, 'TLM'],
@@ -32,8 +35,10 @@ export const DISPLAY_NAMES = new Map([
   [DAI_JOIN, 'DAI_JOIN'],
   [VOW, 'VOW'],
   [VAT, 'VAT'],
+  [SPOT, 'SPOT'],
   [PAUSE_PROXY, 'PAUSE_PROXY'],
   [ILK_A, 'ILK_A'],
   [ILK_A_PIP, 'ILK_A_PIP'],
   [ILK_A_JOIN, 'ILK_A_JOIN'],
+  [LADLE, 'LADLE'],
 ])
