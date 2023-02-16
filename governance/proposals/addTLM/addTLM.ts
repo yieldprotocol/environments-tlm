@@ -16,6 +16,6 @@ const { developer, deployers, makerdao, dssTlm } = require(process.env.CONF as s
   await tlm.connect(deployerAcc).rely(dsPauseProxyAddress);
   console.log(`TLM: ${tlm.address} is now authorized to be called by DSPauseProxy (${dsPauseProxyAddress})`)
 
-  await tlm.connect(deployerAcc).deny(deployers.getOrThrow(tlm.address));
-  console.log(`TLM: ${tlm.address} is no longer authorized to be called by deployer (${deployers.getOrThrow(tlm.address)})`)
+  await tlm.connect(deployerAcc).deny(deployerAcc.address);
+  console.log(`TLM: ${tlm.address} is no longer authorized to be called by deployer (${deployerAcc.address})`)
 })()
