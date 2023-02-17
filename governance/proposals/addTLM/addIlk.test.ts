@@ -23,12 +23,12 @@ const rad = (x: number) => parseUnits(x.toString(), 45)
 
   // Give some fyToken to owner
   await ilk.connect(ladleAcc).mint(ownerAcc.address, wad(1000))
-  console.log(`Minted 1000 ${ILK_A} to owner`);
+  console.log(`Ilk: Minted 1000 ${ILK_A} to owner`);
 
   // Sell the fyToken on the TLM
   await ilk.connect(ownerAcc).approve(tlm.address, wad(1000))
-  console.log(`Approved TLM to spend 1000 ${ILK_A}`);
+  console.log(`Ilk: Approved TLM to spend 1000 ${ILK_A}`);
 
   await tlm.sellGem(ILK_A_B32, ownerAcc.address, wad(1000), { gasLimit: 1000000 })
-  console.log(`Sold 1000 ${ILK_A} to the TLM`);
+  console.log(`TLM: Sold 1000 ${ILK_A} to the TLM`);
 })()
