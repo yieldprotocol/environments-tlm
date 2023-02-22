@@ -27,6 +27,10 @@ export const ILK_A = 'ILK_A'
 export const ILK_A_B32 = ethers.utils.formatBytes32String(ILK_A) // 0x494c4b5f41
 export const ILK_A_PIP = 'ILK_A_PIP'
 export const ILK_A_JOIN = 'ILK_A_JOIN'
+export const IPT_A = 'IPT_A'
+export const IPT_A_B32 = ethers.utils.formatBytes32String(IPT_A) // 0x4950545f41
+export const IPT_A_PIP = 'IPT_A_PIP'
+export const IPT_A_JOIN = 'IPT_A_JOIN'
 export const LADLE = 'LADLE'
 
 export const DISPLAY_NAMES = new Map([
@@ -40,5 +44,8 @@ export const DISPLAY_NAMES = new Map([
   [ILK_A, 'ILK_A'],
   [ILK_A_PIP, 'ILK_A_PIP'],
   [ILK_A_JOIN, 'ILK_A_JOIN'],
+  [IPT_A, 'IPT_A'],
+  [IPT_A_PIP, 'IPT_A_PIP'],
+  [IPT_A_JOIN, 'IPT_A_JOIN'],
   [LADLE, 'LADLE'],
 ])

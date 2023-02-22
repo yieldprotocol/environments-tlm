@@ -6,6 +6,10 @@
       "0x9ca4D6fbE0Ba91d553e74805d2E2545b04AbEfEA"
     ],
     [
+      "IPT_A",
+      "0x49494b3CB41829011471A059a72A16652D95aD6f"
+    ],
+    [
       "MCD_TLM",
       "0xca2a422aee28fC8e316e4e3A36a54718b0639Beb"
     ],
@@ -16,6 +20,14 @@
     [
       "ILK_A_JOIN",
       "0x202424503B76D9578f7b9E969a8F56D11DfF34AF"
+    ],
+    [
+      "IPT_A_PIP",
+      "0xEFe0613505cFF4Eff235975108d989de1Ec0D062"
+    ],
+    [
+      "IPT_A_JOIN",
+      "0x3a4607983F739cAC782392b1B0Ea0d4390b8A530"
     ]
   ]
 }
